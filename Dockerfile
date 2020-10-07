@@ -60,10 +60,10 @@ RUN  apk add --no-cache sed && \
 #Add protection rule
 ADD idprp.conf /etc/apache2/conf.d/idprp.conf
 
-RUN rm /var/www/localhost/htdocs/index.html
+# RUN rm /var/www/localhost/htdocs/index.html
 
 #php default inded
-ADD index.php /var/www/localhost/htdocs/index.php
+# ADD index.php /var/www/localhost/htdocs/index.php
 
 # https://httpd.apache.org/docs/2.4/stopping.html#gracefulstop
 # stop gracefully when docker stops, create issue with interactive mode because it's the signal use by the docker engine on windows.
