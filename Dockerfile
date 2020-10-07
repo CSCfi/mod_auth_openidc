@@ -58,7 +58,7 @@ RUN  apk add --no-cache sed && \
   apk del sed
 
 #Add protection rule
-ADD idprp.conf /etc/apache2/conf.d/idprp.conf
+# ADD idprp.conf /etc/apache2/conf.d/idprp.conf
 
 # RUN rm /var/www/localhost/htdocs/index.html
 
